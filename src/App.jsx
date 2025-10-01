@@ -12,11 +12,10 @@ export const tabs = [
 
 export const App = () => {
   const [activeTabId, setActiveTabId] = useState(tabs[0].id);
-  const goodTitle = `Tab ${activeTabId.slice(-1)}`;
+  // const goodTitle = `Tab ${activeTabId.slice(-1)}`;
 
   return (
     <div className="section">
-      <h1 className="title">Selected tab is {goodTitle}</h1>
       <Tabs
         tabs={tabs}
         activeTabId={activeTabId}
